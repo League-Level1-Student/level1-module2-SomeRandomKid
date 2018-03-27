@@ -10,8 +10,11 @@
  */
 
 class Microwave {
+		
 	private int cookTime;
 	Popcorn thingToBeCooked;
+	
+	
 
 	Microwave() {
 		System.out.println("Microwave says: a Microwave has been made.");
@@ -37,6 +40,15 @@ class Microwave {
 }
 
 public class Popcorn {
+	
+	public static void main(String[] args) {
+		Microwave Why = new Microwave();
+		Popcorn boi = new Popcorn("Buttered");
+			boi.applyHeat();
+			Why.putInMicrowave(boi);
+			Why.setTime(5);
+			Why.startMicrowave();
+	}
 
 	private int kernels = 20;
 	private String flavor;
