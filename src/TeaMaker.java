@@ -4,7 +4,13 @@
  */
 
 public class TeaMaker {
-
+public static void main(String[] args) {
+	TeaBag Boi = new TeaBag("Mint");
+	Kettle Why = new Kettle();
+	Why.boil();
+	Cup Boi2 = new Cup();
+	Boi2.makeTea(Boi, 	Why.getWater());
+}
 	/* Figure out how to make a cup of tea using the classes below */
 
 }
